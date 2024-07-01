@@ -113,6 +113,14 @@
 		  bridge.subscribe((e) => {
           if(e.detail.type == 'VKWebAppShowNativeAdsResult' && e.detail.data.result == true) {
               ss.SendMessage('VkBridge', 'ShowAdsResult', 'good');
+              
+              console.log("showAdshowAdshowAdshowAdshowAd");
+              console.log("showAdshowAdshowAdshowAdshowAd");
+              console.log("BRIDGE", bridge);
+              console.log("waterfall", waterfall);
+              console.log("event", e);
+              console.log("showAdshowAdshowAdshowAdshowAd");
+              console.log("showAdshowAdshowAdshowAdshowAd");
           }
           if(e.detail.type == 'VKWebAppShowNativeAdsFailed') {
              ss.SendMessage('VkBridge', 'ShowAdsResult', 'noGood');
